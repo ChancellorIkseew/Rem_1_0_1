@@ -13,82 +13,31 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\logic">
-      <UniqueIdentifier>{6f6843f0-43c5-411e-b06d-764a12f0574e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\logic\physics">
-      <UniqueIdentifier>{eae8c91c-c985-4df6-b0b8-8515e14bb191}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\graphics">
-      <UniqueIdentifier>{fccd87fa-0b84-4740-bc57-b0b130fbb839}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\graphics\importer_3d">
-      <UniqueIdentifier>{c82eb774-6ebb-4d5f-a467-b74c7f71ef7d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\graphics\camera">
-      <UniqueIdentifier>{247f1f79-0206-4753-b775-fb406fc6fe62}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\graphics\stb">
-      <UniqueIdentifier>{9bd61521-2a6e-4eea-89c8-acca247ce902}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\graphics\base_gl">
-      <UniqueIdentifier>{ceb1eab4-9620-4a0a-b860-f257c1f5c16d}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="logic\physics\vehicle.cpp">
-      <Filter>Source Files\logic\physics</Filter>
-    </ClCompile>
-    <ClCompile Include="logic\physics\collision.cpp">
-      <Filter>Source Files\logic\physics</Filter>
-    </ClCompile>
-    <ClCompile Include="graphics\camera\camera.cpp">
-      <Filter>Source Files\graphics\camera</Filter>
-    </ClCompile>
-    <ClCompile Include="graphics\base_gl\base_gl.cpp">
-      <Filter>Source Files\graphics\base_gl</Filter>
-    </ClCompile>
-    <ClCompile Include="logic\physics\player.cpp">
-      <Filter>Source Files\logic\physics</Filter>
-    </ClCompile>
-    <ClCompile Include="system\macros.cpp">
+    <ClCompile Include="code\graphics\base_gl\base_gl.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="graphics\sprite\sprite.cpp">
+    <ClCompile Include="code\graphics\camera\camera.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="system\callback.cpp">
+    <ClCompile Include="code\graphics\sprite\sprite.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="test_game\test_game.cpp">
+    <ClCompile Include="code\test_game\test_game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="graphics\text\text.cpp">
+    <ClCompile Include="code\system\callback.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="code\system\macros.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stb\stb_image.h">
-      <Filter>Source Files\graphics\stb</Filter>
-    </ClInclude>
-    <ClInclude Include="logic\physics\vehicle.h">
-      <Filter>Source Files\logic\physics</Filter>
-    </ClInclude>
-    <ClInclude Include="logic\physics\collision.h">
-      <Filter>Source Files\logic\physics</Filter>
-    </ClInclude>
-    <ClInclude Include="graphics\camera\camera.h">
-      <Filter>Source Files\graphics\camera</Filter>
-    </ClInclude>
-    <ClInclude Include="graphics\base_gl\base_gl.h">
-      <Filter>Source Files\graphics\base_gl</Filter>
-    </ClInclude>
-    <ClInclude Include="logic\physics\player.h">
-      <Filter>Source Files\logic\physics</Filter>
-    </ClInclude>
     <ClInclude Include="system\macros.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -104,8 +53,35 @@
     <ClInclude Include="graphics\text\text.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="code\graphics\base_gl\base_gl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\graphics\camera\camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\graphics\stb\stb_easy_font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\graphics\stb\stb_image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\logic\start_game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\graphics\sprite\sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\test_game\test_game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\system\callback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="code\system\macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="graphics\shaders\fragment_shader.glsl" />
+    <None Include="code\graphics\shaders\fragment_shader.glsl" />
   </ItemGroup>
 </Project>

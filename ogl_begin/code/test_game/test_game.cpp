@@ -1,6 +1,6 @@
 
 #include "test_game.h"
-#include "../system/macros.h"
+#include "system/macros.h"
 
 rem::Sprite testSprSulfur;
 rem::Camera camera;

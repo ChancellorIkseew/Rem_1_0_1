@@ -77,9 +77,11 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\Пользователь\Desktop\Rem_1_0_1\ogl_begin\code;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -89,9 +91,11 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\Пользователь\Desktop\Rem_1_0_1\ogl_begin\code;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -103,11 +107,13 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\Пользователь\Desktop\Rem_1_0_1\ogl_begin\code;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -119,41 +125,42 @@
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Users\Пользователь\Desktop\Rem_1_0_1\ogl_begin\code;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="graphics\base_gl\base_gl.cpp" />
-    <ClCompile Include="graphics\camera\camera.cpp" />
-    <ClCompile Include="graphics\sprite\sprite.cpp" />
-    <ClCompile Include="graphics\text\text.cpp" />
-    <ClCompile Include="logic\physics\collision.cpp" />
-    <ClCompile Include="logic\physics\player.cpp" />
-    <ClCompile Include="logic\physics\vehicle.cpp" />
+    <ClCompile Include="code\graphics\base_gl\base_gl.cpp" />
+    <ClCompile Include="code\graphics\camera\camera.cpp" />
+    <ClCompile Include="code\graphics\sprite\sprite.cpp" />
+    <ClCompile Include="code\system\callback.cpp" />
+    <ClCompile Include="code\system\macros.cpp" />
+    <ClCompile Include="code\test_game\test_game.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="system\callback.cpp" />
-    <ClCompile Include="system\macros.cpp" />
-    <ClCompile Include="test_game\test_game.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="graphics\base_gl\base_gl.h" />
-    <ClInclude Include="graphics\camera\camera.h" />
+    <ClInclude Include="code\graphics\base_gl\base_gl.h" />
+    <ClInclude Include="code\graphics\camera\camera.h" />
+    <ClInclude Include="code\graphics\sprite\sprite.h" />
+    <ClInclude Include="code\graphics\stb\stb_easy_font.h" />
+    <ClInclude Include="code\graphics\stb\stb_image.h" />
+    <ClInclude Include="code\logic\start_game.h" />
+    <ClInclude Include="code\system\callback.h" />
+    <ClInclude Include="code\system\macros.h" />
+    <ClInclude Include="code\test_game\test_game.h" />
     <ClInclude Include="graphics\sprite\sprite.h" />
     <ClInclude Include="graphics\text\text.h" />
-    <ClInclude Include="logic\physics\collision.h" />
-    <ClInclude Include="logic\physics\player.h" />
-    <ClInclude Include="logic\physics\vehicle.h" />
-    <ClInclude Include="stb\stb_image.h" />
     <ClInclude Include="system\callback.h" />
     <ClInclude Include="system\macros.h" />
     <ClInclude Include="test_game\test_game.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="graphics\shaders\fragment_shader.glsl" />
+    <None Include="code\graphics\shaders\fragment_shader.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
